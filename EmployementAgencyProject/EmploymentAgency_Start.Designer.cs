@@ -45,8 +45,8 @@
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.applicantsAppliedForEachCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.applicantsAppliedForEachJobToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.applicantsAppliedForEachFieldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,21 +188,22 @@
             this.applicantsAppliedForEachJobToolStripMenuItem.Text = "Applicants applied for each job";
             this.applicantsAppliedForEachJobToolStripMenuItem.Click += new System.EventHandler(this.applicantsAppliedForEachJobToolStripMenuItem_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(183, 127);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Welcome Employment Agency";
-            // 
             // applicantsAppliedForEachFieldToolStripMenuItem
             // 
             this.applicantsAppliedForEachFieldToolStripMenuItem.Name = "applicantsAppliedForEachFieldToolStripMenuItem";
             this.applicantsAppliedForEachFieldToolStripMenuItem.Size = new System.Drawing.Size(271, 22);
             this.applicantsAppliedForEachFieldToolStripMenuItem.Text = "Applicants applied for each field";
             this.applicantsAppliedForEachFieldToolStripMenuItem.Click += new System.EventHandler(this.applicantsAppliedForEachFieldToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Sitka Text", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(58, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(413, 39);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Welcome Employment Agency";
             // 
             // EmploymentAgency_Start
             // 

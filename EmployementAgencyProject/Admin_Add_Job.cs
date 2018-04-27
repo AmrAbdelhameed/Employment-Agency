@@ -30,7 +30,6 @@ namespace EmployementAgencyProject
         {
             cmd = new OracleCommand();
             cmd.Connection = conn;
-           // cmd.CommandText = "insert into Jobs values (:Job_id,:Job_Title,:Job_Salary,:Job_Description,:Job_Year_of_Experience,:ApplicantField_ID,:ApplicantCompany_ID)";
             cmd.CommandText = "Insert_Job";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("Job_id", i);

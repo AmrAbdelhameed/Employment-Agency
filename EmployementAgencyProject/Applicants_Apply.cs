@@ -33,17 +33,21 @@ namespace EmployementAgencyProject
             field_id = ControlID.ID2;
             company_id = ControlID.ID3;
 
+            comboBoxSex.Text = "Male";
             comboBoxSex.Items.Add("Male");
             comboBoxSex.Items.Add("Female");
 
             cmd = new OracleCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "select count(Applicants_PhoneID) from Applicants_Phone";
+            cmd.CommandText = "select max(Applicants_PhoneID) from Applicants_Phone";
             cmd.CommandType = CommandType.Text;
             OracleDataReader dr2 = cmd.ExecuteReader();
             if (dr2.Read())
             {
-                i = Convert.ToInt32(dr2[0]);
+                if (dr2[0].ToString().Equals(""))
+                    i = 0;
+                else
+                    i = Convert.ToInt32(dr2[0]);
                 ++i;
             }
 
